@@ -1,0 +1,32 @@
+{
+  "name": "eatdaburger",
+  "version": "1.0.0",
+  "description": "Burger logger app using MVC design to implement MySQL, Node, Express, Handlebars, and ORM",
+  "main": "server.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffreyadamo/EatDaBurger.git"
+  },
+  "keywords": [
+    "mysql",
+    "node",
+    "express",
+    "handlebars",
+    "orm",
+    "mvc"
+  ],
+  "author": "Jeffrey Adamo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffreyadamo/EatDaBurger/issues"
+  },
+  "homepage": "https://github.com/jeffreyadamo/EatDaBurger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}
