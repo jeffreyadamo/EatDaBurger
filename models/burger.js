@@ -22,4 +22,4 @@ var burger = {
   };
   
   // Export the database functions for the controller.
-  module.exports = buger;
+  module.exports = burger;
