@@ -2,16 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/public/assets/css/burger_style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./public/assets/css/burger_style.css" type="text/css" />
     <title>Eat Da Burger!</title>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="/public/assets/js/burger.js"></script>
   </head>
   <body>
+    <main class="container">
+        <div class="row">
+            <div class="col s12 eatTitle">
+                <h1 class=" center " >
+                    Eat Da Burger!
+                </h1>
+            </div>
+            <div class="col s4 offset-s4">
+                <img src="./public/assets/img/burger.jpg" class="responsive-img"/>
+            </div>
+        </div>
 
-    <h1>Eat Da Burger!</h1>
+        <div class="row">
+            <div class="col s6 center">
+                <h4>Burgers ready to eat!</h4>
+                <hr>
+            </div>
+            <div class="col s6 center">
+                <h4>List of the Devoured</h4>
+                <hr>
+            </div>
+        </div>
 
-    <img src="./public/assets/img/burger.jpg" width=200px/>
 
     <h2>Burgers that are devoured!</h2>
 
@@ -46,5 +66,6 @@
     <footer>
       <div>Photo by Oliver Sjöström from Pexels</div>
     </footer>
+</main>
   </body>
 </html>
