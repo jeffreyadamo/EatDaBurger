@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./public/assets/css/burger_style.css" type="text/css" />
     <title>Eat Da Burger!</title>
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -27,8 +28,20 @@
                 <hr>
                 <ul>
                     {{#each burgers}} {{#if devoured}} {{> burgers/burger-block
-                    devoured=false}} {{/if}} {{/each}}
-                  </ul>
+                    devoured=false}} {{/if}} {{/each}} 
+                    <li>
+                      <div class="col s6">
+                          {{burger_name}}
+                      </div>
+                      <div class="col s5">
+                         <button class="change-devour" data-id="{{id}}" data-newDevour="{{devoured}}">
+                        DEVOUR!
+                         </button>
+                      </div>
+                    </li>
+                </ul>
+
+                
             </div>
             <div class="col s6 center">
                 <h4>List of the Devoured</h4>
@@ -49,28 +62,38 @@
                         
                 <form class="create-form">
                     <div class="form-group">
-                      <label for="burger">Burger Name:</label>
+                      <label for="burger">
+                          <span class="yellowText">
+                              Burger Name:
+                          </span>
+                      </label>
                       <input type="text" id="burger" name="name" />
                     </div>
                     <div class="form-group">
                         <label for="burger">
+                            <span class="yellowText">
                            Has this burger been eaten?
+                            </span>
                         </label>
                         <br />
                         <p>
                             <label>
                             <input name="devoured group1" type="radio" value="1" checked />
-                            <span>I've DEVOURED this burger!</span>
+                            <span class="yellowText">I've DEVOURED this burger!</span>
                             </label>
                         </p>
                         <p>
                             <label>
                             <input name="devoured group1" type="radio" value="0"/>
-                            <span>Not yet...(but I'm hungry)</span>
+                            <span class="yellowText">Not yet...(but I'm hungry)</span>
                             </label>
                         </p>
                     <div class="form-group">
-                    <button type="submit">Add Burger</button>
+                        
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Add Burger
+                        <i class="material-icons right">send</i>
+                      </button>
+                    <!-- <button type="submit">Add Burger</button> -->
                   </form>
              </div>
             </div>

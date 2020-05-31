@@ -1,7 +1,10 @@
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background:#ff5959;
+  color:#fafafa;
+  font-size: 20px;
+
 }
 
 .label {
@@ -41,3 +44,8 @@ h1{
 .addBurger{
     background-color: #085f63;
 }
+
+.yellowText{
+    color:#facf5a;
+}
+
