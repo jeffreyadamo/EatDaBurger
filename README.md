@@ -18,6 +18,8 @@ UW Full Stack BootCamp - Week 13
 
 * [Tests](#tests)
 
+* [Issues](#issues)
+
 * [Questions](#questions)
 
 ## Description
