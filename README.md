@@ -64,7 +64,7 @@ Visit [localhost:3000](localhost:3000) on your browser to Eat Da Burger.
 
 ## Usage
 
-This Node.js application is deployed by [Heroku](https://www.heroku.com/) for front end usage.  
+This Node.js application is deployed by [Heroku](https://www.heroku.com/).
 
 Visit Eat Da Burger online at [https://ancient-cove-71755.herokuapp.com/](https://ancient-cove-71755.herokuapp.com/).  
  
@@ -79,26 +79,30 @@ This app utilizes Model View Controller (MVC) paradigm. [MVC](https://en.wikiped
 
 ### Model
 
-```
+
 The Model is the data layer of the application. We implement Object-Relational Mapping (ORM) in /config/orm.js to create reusable methods for querying our database. The application's server side JavaScript functions (buttons, form) @ public/assets/js/burger.js will draw from /config/orm.js to then call the ORM functions using burger specific input from the ORM at /model/burger.js which will be used by the controller to render the View.
-```
+
 ### View
 
-```
-The View is the template engine used to generate HTML. This app uses Handlebars.js to generate the HTML head and body components in /views. Data received from the Model by the Controller is rendered.
-```
+
+The View is the template engine used to generate the user interface. This app uses Handlebars.js to generate the HTML head and body components in /views. Data received from the Model by the Controller is rendered.
+
 
 ### Controller
 
-```
+
 The Controller uses another JavaScript file found at controllers/burgers_controller.js. This file acts as an intermediary between the View and the Model. /burgers_controller.js contains the ROUTER information that will direct the information passed from the database to the browser.  
-```
+
 
 
 ## Tests
 ```
 none
 ```
+## Issues
+
+* The application exhibits 3 components of the CRUD paradigm. It can CREATE da burger, READ da burger's info from the database, and UPDATE the status of da burger, but you cannot DELETE the burger as the application stands. Adding a DELETE feature would be desired in an updated version of the application.
+* Materialize CSS Framework was chosen for front-end styling. Some responsive updates are in order to ensure proper formatting on multiple devices.
 
 ## Questions
 
